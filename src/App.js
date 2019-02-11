@@ -5,6 +5,7 @@ import Field from "./components/Field/field";
 import Cell from "./components/Field/Cell/cell";
 import Button from './components/button'
 import Counter from './components/counter'
+import EndGame from './components/endgame'
 
 
 const FIELD_SIZE = 6;
@@ -69,7 +70,7 @@ class App extends Component {
     render() {
         return (
             <div className="container">
-
+    `
                 <Field>
                     {this.state.cells.map((item, index) =>
                         <Cell
@@ -79,6 +80,7 @@ class App extends Component {
                         />
                     )}
                 </Field>
+                {this.state.endGame?<EndGame/>:null}
                 < div className='misc'>
                     < Counter
                         score={this.state.counter}

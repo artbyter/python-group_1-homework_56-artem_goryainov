@@ -1,10 +1,10 @@
 import React from 'react'
 
-class Counter extends React.Component{
+function Counter(props) {
 
-    render() {
-        return <div>Попыток: {this.props.score}</div>
-    }
+
+    return <div>Попыток: {props.score}</div>
+
 
 }
 

@@ -1,7 +1,7 @@
-/*.container {*/
-    /*max-width: 90%;*/
-    /*margin: 0 auto;*/
-/*}*/
+.container {
+max-width: 90%;
+margin: 0 auto;
+}
 
 .button {
     min-width: 100px;
@@ -52,6 +52,17 @@
     content: 'O';
 }
 
-.misc{
-  text-align: center;
+.misc {
+    text-align: center;
+}
+
+.endGame {
+    border: 2px solid black;
+    width: 70%;
+    background-color: crimson;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    opacity: 0.8;
+    text-align: center;
 }
